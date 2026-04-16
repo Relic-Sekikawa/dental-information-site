@@ -51,7 +51,27 @@ npm run build
 npm run preview
 ```
 
-## 📁 プロジェクト構造
+## � Dockerで実行
+
+Dockerコンテナで起動するには、以下のコマンドを実行します。
+
+```bash
+# Dockerイメージをビルド
+docker build -t dental-information-site .
+
+# コンテナを起動
+docker run --rm -p 5173:80 dental-information-site
+```
+
+あるいは `docker-compose` で実行します。
+
+```bash
+docker compose up --build
+```
+
+コンテナが起動したら、ブラウザで `http://localhost:5173` にアクセスしてください。
+
+## �📁 プロジェクト構造
 
 ```
 src/
