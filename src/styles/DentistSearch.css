@@ -1,0 +1,224 @@
+.dentist-search-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.dentist-search-container h1 {
+  text-align: center;
+  font-size: 32px;
+  color: #2c3e50;
+  margin-bottom: 12px;
+}
+
+.guide-description {
+  text-align: center;
+  font-size: 16px;
+  color: #7f8c8d;
+  margin: 0 0 32px 0;
+}
+
+.search-controls {
+  background: white;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 24px;
+}
+
+.search-box {
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #ecf0f1;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.filter-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.filter-group label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.filter-select {
+  padding: 10px 12px;
+  border: 2px solid #ecf0f1;
+  border-radius: 4px;
+  font-size: 13px;
+  background-color: white;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.filter-select:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.search-results-count {
+  text-align: center;
+  font-size: 14px;
+  color: #7f8c8d;
+  margin-bottom: 24px;
+}
+
+.dentist-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.dentist-card {
+  background: white;
+  border: 2px solid #ecf0f1;
+  border-radius: 8px;
+  padding: 24px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.dentist-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border-color: #3498db;
+}
+
+.dentist-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  gap: 12px;
+}
+
+.dentist-header h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #2c3e50;
+  flex: 1;
+}
+
+.rating-badge {
+  background-color: #fff3e0;
+  color: #f57f17;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.dentist-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.info-row {
+  display: flex;
+  gap: 12px;
+  font-size: 13px;
+}
+
+.info-label {
+  font-weight: 600;
+  color: #2c3e50;
+  min-width: 80px;
+}
+
+.info-row span:last-child {
+  color: #5d6d7d;
+}
+
+.distance {
+  background-color: #e3f2fd;
+  color: #1976d2;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+.specialties {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.specialty-tag {
+  background-color: #e0f2f1;
+  color: #00695c;
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 12px;
+}
+
+.contact-button {
+  width: 100%;
+  padding: 12px 16px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #2980b9;
+}
+
+.no-results {
+  text-align: center;
+  padding: 40px;
+  color: #7f8c8d;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .dentist-search-container h1 {
+    font-size: 24px;
+  }
+
+  .dentist-header {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .dentist-info {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .info-row {
+    justify-content: space-between;
+  }
+
+  .info-label {
+    min-width: auto;
+  }
+}

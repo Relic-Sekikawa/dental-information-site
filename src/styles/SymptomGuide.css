@@ -1,0 +1,139 @@
+.symptom-guide-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.symptom-guide-container h1 {
+  text-align: center;
+  font-size: 32px;
+  color: #2c3e50;
+  margin-bottom: 12px;
+}
+
+.guide-description {
+  text-align: center;
+  font-size: 16px;
+  color: #7f8c8d;
+  margin: 0 0 40px 0;
+}
+
+.symptoms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.symptom-card {
+  background: white;
+  border: 2px solid #ecf0f1;
+  border-radius: 8px;
+  padding: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.symptom-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.symptom-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.symptom-header h3 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 18px;
+  flex: 1;
+}
+
+.severity-badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.symptom-description {
+  color: #7f8c8d;
+  font-size: 14px;
+  margin: 12px 0;
+}
+
+.treatment-duration {
+  background-color: #f8f9fa;
+  padding: 12px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #2c3e50;
+  margin: 12px 0 0 0;
+}
+
+.symptom-details {
+  margin-top: 16px;
+  padding-top: 16px;
+  font-size: 14px;
+  color: #5d6d7d;
+  line-height: 1.6;
+}
+
+.visit-recommendation {
+  background-color: #ffe8e8;
+  color: #c23030;
+  padding: 12px 16px;
+  border-radius: 4px;
+  margin-top: 12px;
+  border-left: 4px solid #c23030;
+}
+
+.guide-notes {
+  background-color: #e8f5e9;
+  border: 2px solid #4caf50;
+  border-radius: 8px;
+  padding: 24px;
+  margin-top: 40px;
+}
+
+.guide-notes h3 {
+  color: #2d5016;
+  margin-top: 0;
+}
+
+.guide-notes ul {
+  margin: 0;
+  padding-left: 24px;
+}
+
+.guide-notes li {
+  margin: 8px 0;
+  color: #2d5016;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .symptom-guide-container h1 {
+    font-size: 24px;
+  }
+
+  .symptoms-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .symptom-header {
+    flex-direction: column;
+  }
+
+  .severity-badge {
+    align-self: flex-start;
+  }
+}
